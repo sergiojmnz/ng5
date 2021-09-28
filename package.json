@@ -5,13 +5,14 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "buildProd": "node --max-old-space-size=8000 node_modules\\@angular\\cli\\bin\\ng build --prod --build--optimizer --aot",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "test-headless": "ng test --watch=false --browsers=ChromeHeadless"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~12.2.0",
+    "@angular/animations": "^12.2.7",
     "@angular/common": "~12.2.0",
     "@angular/compiler": "~12.2.0",
     "@angular/core": "~12.2.0",
